@@ -1,0 +1,474 @@
+ <style>
+
+.homeslider {
+  margin-top: 80px;
+}
+
+.carousel {
+position: relative;
+top: 15px;
+}
+
+
+
+    .carousel-item{
+      min-height:600px;
+      background:no-repeat center center scroll;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+
+    .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 250px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+  color: #fff;
+  text-align: center;
+}
+
+.capttxt {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: 'Exo 2', sans-serif;
+  text-align: right;
+}
+
+.divederlined {
+  height: 1.5px;
+  background-color: #010b48; 
+}
+
+.divederlineder {
+  height: 1.5px;
+  background-color: #ffffff; 
+}
+
+zoomin img {
+  height: 110px;
+  width: 110px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.zoomin img:hover {
+  width: 180px;
+  height: 180px;
+}
+
+.image-box{
+  width:100%;
+  overflow:hidden;
+}
+.image {
+  width:100%;
+  height:400px;
+  
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(IMG_1930.JPG);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.image:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+} 
+
+.image1 {
+  width:100%;
+  height:400px;
+  
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(http://www.churchmanagementguide.com/wp-content/uploads/2016/12/Church-Services.jpg);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.image1:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+} 
+
+.image2 {
+  width:100%;
+  height:400px;
+  
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(IMG_8064.jpg);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.image2:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+} 
+
+.image3 {
+  width:100%;
+  height:400px;
+ 
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(IMG_4128.jpg);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.image3:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+} 
+
+.image4 {
+  width:100%;
+  height:400px;
+ 
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(https://www.giveasyoulive.com/images/bitmap/ways-to-raise/giveasyou-donations.jpg);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.image4:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+} 
+
+.housedescribe{
+  text-align: center;
+}
+
+.housedescribe a{
+  text-align: center; 
+  position:relative; 
+  top: 200px;
+  font-size: 18px;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  letter-spacing: 2px;
+  border: 3px solid #ffffff;
+  padding: 15px;
+}
+
+.housedescribe a:hover{
+  text-align: center; 
+  position:relative; 
+  top: 200px;
+  font-size: 18px;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  letter-spacing: 2px;
+  border: 3px solid #fdbd1e;
+  padding: 15px;
+}
+
+.calltoaction{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.ctahold {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.famwantyousecthome{
+  font-family: 'Righteous', cursive; 
+  color: white; 
+  font-size: 50px; 
+  text-shadow: 1px 0px 6px rgba(150, 150, 150, 1);
+  position: relative;
+  top: 180px;
+  text-align: center;
+}
+
+.calltoactionhead{
+   font-family: 'Righteous', cursive; 
+  color: white; 
+  font-size: 35px; 
+  text-align: center;
+}
+
+.famwantyousecthome2{
+  font-family: 'Asap Condensed', 
+  sans-serif; 
+  letter-spacing: 2px;
+  position: relative;
+  top: 190px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.calltoactionheadsub{
+  font-family: 'Asap Condensed', 
+  sans-serif; 
+  letter-spacing: 2px;
+  text-align: center;
+  color: #333333;
+}
+
+.ctabutton {
+  background-color: #7fd71e;
+  border: 2px solid #f2d308;
+  border-radius: 2px;
+}
+
+.ctabutton:hover {
+  background-color: #7fd71e;
+}
+
+.ctabutton:active {
+  background-color: #7fd71e;
+}
+
+.worksdivider {
+  background-color: white;
+  height: 1.5px;
+}
+
+.btnhomeslider {
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.btnhomeslider:hover {
+  background-color: transparent;
+  border: 1.5px solid #fdbd1e;
+  border-radius: 10px;
+  color: #fdbd1e;
+  font-size: 18px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.btnhomeslider:active {
+  background-color: transparent;
+  border: 1.5px solid #fdbd1e;
+  border-radius: 10px;
+  color: #fdbd1e;
+  font-size: 18px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.newsletterholder {
+  background-color: #437356;
+}
+
+</style>
+
+ <section class="homeslider">
+   <header>
+
+ 
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('https://res.cloudinary.com/nikasemo/image/upload/v1532534861/partnershipcover11_emykgz.jpg')">
+            <div class="carousel-caption d-md-block">
+              <!-- <h3 class="capttxt">Welcome The Graced Life Kingdom.</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65); text-align: right; font-weight: 300;">Anim proident ut amet magna excepteur esse proident nisi nulla .</p>
+              <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p> -->
+            </div>
+          </div>
+           <!-- Slide Two - Set the background image for this slide in the line below -->
+           <div class="carousel-item" style="background-image: url('https://res.cloudinary.com/nikasemo/image/upload/v1532534861/partnershipcover4_heaqwy.jpg')">
+            <div class="carousel-caption d-md-block">
+              <!-- <h3 class="capttxt" style="">We are Building a Christlike Kingdom.</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65); text-align: right; font-weight: 300;">Ut velit aute dolore enim cupidatat non eiusmod aliquip nostrud.</p>
+              <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p> -->
+            </div>
+          </div>
+
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+           <div class="carousel-item" style="background-image: url('https://res.cloudinary.com/nikasemo/image/upload/v1532534860/donateglk_nq2uky.jpg')">
+            <div class="carousel-caption d-md-block">
+             <!--  <h3 class="capttxt" style="">We are Building a Christlike Kingdom.</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65); text-align: right; font-weight: 300;">Ut velit aute dolore enim cupidatat non eiusmod aliquip nostrud.</p>
+              <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p> -->
+            </div>
+          </div>
+
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+           <div class="carousel-item" style="background-image: url('https://res.cloudinary.com/nikasemo/image/upload/v1532534861/partnershipcover5pay_pbnemm.jpg')">
+            <div class="carousel-caption d-md-block">
+              <!-- <h3 class="capttxt" style="">Live the Christ-like. Shine on!</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">Anim proident ut amet magna excepteur esse proident nisi nulla.</p>
+              <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p> -->
+            </div>
+          </div>
+         
+      
+         
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+ </section>
+
+
+<section class="py-5 aboutwistech">
+      <div class="container">
+       
+        <div class ="row">
+          <div class="col-lg-9 col-sm-12">
+             <h2 style="font-family: 'Exo 2', sans-serif; text-align: left; color: #010b48; font-size: 25px;" class="js-reveal">
+         Welcome to the Graced Life Partners</h2>
+        <hr align="left" width="10%" class="divederlined">
+           <p style="font-weight: 300; font-size: 14px; text-align: left; color: #000000; font-family: 'Exo 2', sans-serif;" class="js-reveal">
+           The GRACED LIFE Partner’s Village is a community of working and financial partners of THE GRACED LIFE KINGDOM, laboring together with God to fulfil His work with The Graced Life Kingdom in advancing and establishing His Kingdom on earth through Jesus Christ. The Kingdom recognizes its workers as “Partners” and its leaders as “Servants” as shown in its hierarchy, even though the “Servants” are workers too. Working Partners include Executive Servants, Ministerial Servants, Ministerial Partners, Senior Partners, and Partners (Junior Workers). Junior Workers include new recruits, service personals and volunteers.
+           </p>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <img src="gracedlifepartnershipvillagenewlogweb.png" width="200px" height="200px" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ <section class="js-reveal newsletterholder" style="padding: 40px; margin-bottom: 20px;">
+       
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-md-offset-2">
+        <h3 style="font-family: 'Poppins', sans-serif; text-align: center; color: #ffffff;" class="js-reveal">
+      Stay Connected with the Graced Life Kingdom!  
+      </h3>
+      <hr align="center" width="10%" class="divederlineder">
+       <p style="font-weight: 300; font-size: 14px; text-align: center; color: #ffffff; font-family: 'Exo 2', sans-serif;" class="js-reveal">
+           Get daily inspiration from the word of God and connect with our family faith!
+         </p>
+      <form class="form-inline mr-auto">
+  <div class="form-group mb-2">
+    <label for="staticEmail2" class="sr-only">Email</label>
+    <input type="text" class="form-control" id="staticEmail2" placeholder="Your Name">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Your Email">
+  </div>
+  <button type="submit" class="btn btn-primary btnhomeslider mb-2">Join Today!</button>
+</form>
+</p>
+    </div>
+    </div>
+    </div>
+  
+</section>
+
+<section>
+      <div class="row no-gutters">
+      <div class="col-sm-8 zoomimgbg1">
+       <div class="image-box">
+  <div class="image">
+    <h3 class="housedescribe">
+    <a href="/products?product_type_id=4" style="text-decoration:none;">Activites</a>
+    </h3>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-4 zoomimgbg2">
+       <div class="image-box">
+  <div class="image1">
+    <h3 class="housedescribe" style="">
+    <a href="/products?product_type_id=8" style="text-decoration:none;">About Us</a>
+    </h3>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-4 zoomimgbg3">
+       <div class="image-box">
+  <div class="image2">
+    <h3 class="housedescribe" style="">
+    <a href="/products?product_type_id=9" style="text-decoration:none;">Working Partners</a>
+    </h3>
+  </div>
+</div>
+</div>
+<div class="col-sm-4 zoomimgbg3">
+       <div class="image-box">
+  <div class="image3">
+    <h3 class="housedescribe" style="">
+    <a href="/products?product_type_id=13" style="text-decoration:none;">Financial Partners</a>
+    </h3>
+  </div>
+</div>
+</div>
+<div class="col-sm-4 zoomimgbg3">
+       <div class="image-box">
+  <div class="image4">
+    <h3 class="housedescribe" style="">
+    <a href="/products?product_type_id=17" style="text-decoration:none;">Support Us</a>
+    </h3>
+  </div>
+</div>
+</div>
+</div>
+
+      </div>
+     </section>
