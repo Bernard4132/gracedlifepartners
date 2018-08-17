@@ -1,0 +1,187 @@
+
+<style type="text/css">
+
+  .aboutwistech {
+  } 
+
+  .divederlined {
+    height: 1.5px;
+    background-color: #437356; 
+  }
+
+  .divederlineder {
+    height: 1.5px;
+    background-color: #ffffff; 
+  }
+
+  .aduins{
+ background:linear-gradient(0deg,rgba(0, 0, 0,0.3),rgba(0, 0, 0,0.3)),url(https://res.cloudinary.com/nikasemo/image/upload/v1534516619/partnershipcover151_e30cgx.jpg);
+  background-position:center;
+  min-height: 350px;
+  padding: 50px;
+}
+
+.aduinsh1 {
+      text-align: center; 
+      color: white; 
+      position: relative; 
+      top: 60px; 
+      font-weight: 900;  
+      text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5); 
+      font-family: 'Rubik', sans-serif; 
+      font-size: 50px; 
+      line-height: 60px;
+    }
+
+.aduinsp1 {
+  text-align: center; 
+  color: white; 
+  position: relative; 
+  top: 55px;
+}
+
+.js-reveal {
+  opacity: 1;
+  transition: opacity .7s ease-in, margin-top .7s ease-out;
+}
+
+.js-reveal--hidden {
+  opacity: 0;
+  margin-top: 3em;
+}
+
+@media only screen and (min-width : 100px) and (max-width : 600px) {
+
+.aduinsh1 {
+      text-align: center; 
+      color: white; 
+      position: relative; 
+      top: 0px; 
+      font-weight: 900;  
+      text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5); 
+      font-family: 'Rubik', sans-serif; 
+      font-size: 50px; 
+      line-height: 60px;
+    }
+
+.aduinsp1 {
+  text-align: center; 
+  color: white; 
+  position: relative; 
+  top: 10px;
+}
+
+
+}
+
+</style>
+
+<section class="aduins">
+      <div class="container">
+        <div class="row" style="margin-top: 70px">
+          <div class="col-lg-12">
+            <h1 style="font-family: 'Exo 2', sans-serif;" class="aduinsh1">
+              Become a<br>
+              Fulltime Working Partner
+            </h1>
+           <!--  <p style="" class="aduinsp1">
+              To be the best in business education and business research in Africa
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <% if notice %>
+<div class="alert alert-success alert-dismissible" role="alert" style="position: absolute; top: 100px; z-index: 99999;>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <p class="notice"><%= notice %></p>
+</div>
+<% end %>
+
+<section class="py-5 aboutwistech">
+      <div class="container">
+       
+        <div class ="row">
+          <div class="col-lg-9 col-sm-12">
+             <h2 style="font-family: 'Exo 2', sans-serif; text-align: left; color: #437356; font-size: 25px;" class="js-reveal">
+         Fulltime Working Partner</h2>
+        <hr align="left" width="10%" class="divederlined">
+           <p style="font-weight: 300; font-size: 14px; text-align: left; color: #000000; font-family: 'Exo 2', sans-serif;" class="js-reveal">
+           Partner with us with your time, strength and full commitment by working full-time for the kingdom in our various branches; Church, Business, Multimedia, Production, Real Estate, Education and Foundation. Full-time working partnership comes with benefits that are not typically offered to part-time working partners and volunteers, such as considerable monthly gratuity, annual leave, sickleave, health insurance and pension scheme, aside the heavenly reward which awaits all our partners.
+         </p>
+         <h4 style="margin-bottom: 20px; margin-top: 20px;">Fill Partners Form</h4>
+         <hr>
+          <div class="col-lg-12">
+            <%= form_for(@partner) do |f| %>
+  <% if @partner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@partner.errors.count, "error") %> prohibited this partner from being saved:</h2>
+
+      <ul>
+      <% @partner.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="form-row">
+    <div class="col-lg-6 col-sm-12">
+     <label>First Name</label>
+    <%= f.text_field :firstname, :class => "form-control"%>
+    </div>
+    <div class="col-lg-6 col-sm-12 margtopfm">
+     <label>Last Name</label>
+    <%= f.text_field :lastname, :class => "form-control" %>
+    </div>
+  </div>
+<br>
+
+  <div class="form-group">
+    <label>Email</label>
+    <%= f.text_field :email, :class => "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Phone Number</label>
+    <%= f.text_field :phonenumber, :class => "form-control" %>
+  </div>
+
+  <div class="form-row">
+    <div class="col-lg-6 col-sm-12">
+     <label>Country</label>
+    <%= f.text_field :conutry, :class => "form-control" %>
+    </div>
+    <div class="col-lg-6 col-sm-12 margtopfm">
+     <label>City</label>
+    <%= f.text_field :city, :class => "form-control" %>
+    </div>
+  </div>
+<br>
+
+<div class="form-group">
+    <label>What do you want to do in the Kingdom?</label>
+    <%= f.text_area :whattodo, :class => "form-control", :rows => "5" %>
+  </div>
+  
+
+  <div class="form-group" style="display: none;">
+    <%= f.label :partnerrole %>
+    <%= f.text_field :partnerrole, :value => "Fulltime" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Submit Form", :class => "btn btn-success" %>
+  </div>
+<% end %>
+
+          </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <img src="gracedlifepartnershipvillagenewlogweb.png" width="200px" height="200px" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>

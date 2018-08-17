@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Partners</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+      <th>Conutry</th>
+      <th>City</th>
+      <th>Phonenumber</th>
+      <th>Whattodo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @partners.each do |partner| %>
+      <tr>
+        <td><%= partner.firstname %></td>
+        <td><%= partner.lastname %></td>
+        <td><%= partner.email %></td>
+        <td><%= partner.conutry %></td>
+        <td><%= partner.city %></td>
+        <td><%= partner.phonenumber %></td>
+        <td><%= partner.whattodo %></td>
+        <td><%= partner.partnerrole %></td>
+        <td><%= link_to 'Show', partner %></td>
+        <td><%= link_to 'Edit', edit_partner_path(partner) %></td>
+        <td><%= link_to 'Destroy', partner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Partner', new_partner_path %>
